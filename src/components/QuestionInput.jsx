@@ -3,7 +3,7 @@ function QuestionInput({ option, id, checked, onChange}){
 
 
     return(
-        <div>
+        <div className="checkbox-item">
             <input 
                 type="checkbox" 
                 id={id} 

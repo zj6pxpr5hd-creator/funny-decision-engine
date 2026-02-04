@@ -2,7 +2,23 @@ import QuestionInput from "./QuestionInput";
 import { useState } from "react";
 
 function QuestionForm(){
-    const options  =  ["comfort","growth", "relations", "reflect"];  //array of each choice text
+    const options  =  [
+        "comfort",
+        "growth", 
+        "relations", 
+        "reflect", 
+        "stay at home",
+        "go out",
+        "study",
+        "work",
+        "go for a walk",
+        "journal",
+        "play videogames",
+        "watch tv",
+        "read a book",
+        "talk with friends",
+        "call grandma"
+    ];  //array of each choice text
     const [values, setValues] =  useState(     //saves the state of each checkbox
         ()  => options.map(() => false)
     );                                         //one value for each checkbox to initialize them
@@ -16,8 +32,9 @@ function QuestionForm(){
     };
 
     return(
-        <div>
-            <h1>Question Form</h1>
+        <section className="form">
+            <h2>What are your priorities?</h2>
+            <div className="checkbox-container">
             {
                 options.map((option, index) => {
                     return(
@@ -31,8 +48,8 @@ function QuestionForm(){
                     );
                 })
             }
-            
-        </div>
+            </div>
+        </section>
     );
 
 }

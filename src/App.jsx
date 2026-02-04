@@ -8,10 +8,12 @@ function App() {
 
   return (
     <>
-      <Header  />
-      <QuestionForm />
-      <Result />
-      <Footer />
+      <div className='container'>
+        <Header  />
+        <QuestionForm />
+        <Result />
+        <Footer />
+      </div>
     </>
   )
 }

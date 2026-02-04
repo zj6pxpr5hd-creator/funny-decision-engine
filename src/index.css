@@ -1,9 +1,11 @@
 :root{
-  --title: #f17105;
-  --title-dark: #e71d36;
-  --input: #28affa;
-  --text: #054a91;
-  --bg: #fff952;
+  --title: #f9c846;
+  --title-dark: #f96e46;
+  --text-special: #bc0000;
+  --input: #0b0b0b;
+  --btn: #00e8fc;
+  --text: #df0000;
+  --bg: #fff;
 }
 
 
@@ -39,7 +41,7 @@ body {
   line-height: 1.6;
 }
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
 }
@@ -67,9 +69,31 @@ h3{
 }
 
 p{
-  color: var(--title);
+  color: var(--text);
   font-size: 1.2rem;
 }
+
+
+/*==================
+      Header
+===================*/
+
+.app-title{
+  font-size: 8rem;
+  margin-bottom: 0.5rem;
+  color: var(--title-dark);
+}
+
+.app-title::before{
+  content: ".";
+  color: var(--title);
+}
+
+.special-letter{
+  color: var(--text-special);
+}
+
+
 
 /*=================
     Question Form
@@ -85,7 +109,7 @@ input[type="checkbox"]{
 label{
   font-size: 1.1rem;
   align-items: flex-start;
-  color: var(--text);
+  color: var(--input);
 }
 
 .checkbox-container{
@@ -103,7 +127,7 @@ label{
 }
 
 .enter-button{
-  background-color: var(--input);
+  background-color: var(--btn);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -111,6 +135,20 @@ label{
   cursor: pointer;
   border-radius: 5px;
   margin-top: 1rem;
+}
+
+/*============
+    FOOTER
+=============*/
+
+a{
+  text-decoration: none;
+  color: var(--text-special);
+}
+
+a:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /*============

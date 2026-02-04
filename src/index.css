@@ -1,9 +1,9 @@
 :root{
-  --title: #c1121f;
-  --title-dark: #780000;
-  --input: #669bbc;
-  --text: #003049;
-  --bg: #fdf0d5;
+  --title: #f17105;
+  --title-dark: #e71d36;
+  --input: #28affa;
+  --text: #054a91;
+  --bg: #fff952;
 }
 
 
@@ -61,6 +61,11 @@ h2{
   color: var(--title-dark);
 }
 
+h3{
+  font-size: 1.8rem;
+  color: var(--title-dark);
+}
+
 p{
   color: var(--title);
   font-size: 1.2rem;
@@ -85,7 +90,7 @@ label{
 
 .checkbox-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
   gap: 1rem;
   justify-content: left;
   padding: 1rem;
@@ -97,6 +102,16 @@ label{
   align-items: center;
 }
 
+.enter-button{
+  background-color: var(--input);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
 
 /*============
     SPACING
@@ -105,5 +120,3 @@ label{
 section{
   padding: 2rem 0;
 }
-
-

@@ -2,7 +2,7 @@ function Result({ result }){
 
     return(
         <section>
-            <h1>Result</h1>
+            <h1 className="result">Result:</h1>
             {result && <p>{result}</p>}
         </section>
     );

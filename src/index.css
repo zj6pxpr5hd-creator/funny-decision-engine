@@ -1,9 +1,9 @@
 :root{
   --title: #f9c846;
-  --title-dark: #f96e46;
+  --title-dark: #f9c846;
   --text-special: #bc0000;
   --input: #0b0b0b;
-  --btn: #00e8fc;
+  --btn: #bc0000;
   --text: #df0000;
   --bg: #fff;
 }
@@ -70,7 +70,7 @@ h3{
 
 p{
   color: var(--text);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 
@@ -84,13 +84,34 @@ p{
   color: var(--title-dark);
 }
 
-.app-title::before{
-  content: ".";
-  color: var(--title);
-}
 
 .special-letter{
   color: var(--text-special);
+}
+
+.app-title::before{
+  content:'';
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 85%;
+  background-color: var(--bg);
+  z-index: -1;
+}
+.app-title::after{
+  content:'';
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 85%;
+  background-color: var(--title);
+  z-index: -2;
 }
 
 
@@ -136,10 +157,24 @@ label{
   border-radius: 5px;
   margin-top: 1rem;
 }
+/*==================
+      Result
+=================*/
+.result{
+
+  font-size: 3rem;
+}
+
 
 /*============
     FOOTER
 =============*/
+
+.footer-section{
+  text-align: center;
+  border-top: 1px solid var(--text);
+  margin-top: 6rem;
+}
 
 a{
   text-decoration: none;
